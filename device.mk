@@ -89,5 +89,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_mediatek_video.xml \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_performance.xml
+
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
