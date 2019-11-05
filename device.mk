@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Overlay from mtk-telephony-ext
+include vendor/mediatek/hardware/telephony-ext/overlay.mk
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
@@ -133,6 +136,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    mtk-telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
