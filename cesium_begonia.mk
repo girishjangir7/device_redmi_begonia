@@ -28,6 +28,9 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Let's call official
+CUSTOM_BUILD_TYPE := OFFICIAL
+
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
