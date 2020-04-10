@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/begonia
+DEVICE_PATH := device/redmi/begonia
 
 # Architecture
 TARGET_ARCH := arm64
@@ -64,7 +64,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/begonia
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
 TARGET_KERNEL_CONFIG := begonia_user_defconfig
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -132,4 +132,4 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/begonia/BoardConfigVendor.mk
+-include vendor/redmi/begonia/BoardConfigVendor.mk

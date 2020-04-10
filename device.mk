@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/begonia
+DEVICE_PATH := device/redmi/begonia
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -95,4 +95,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_codecs_performance.xml
 
 # Inherit vendor
-$(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
+$(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
