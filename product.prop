@@ -51,6 +51,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.xiaomi.bl.poll=true \
     ro.colorpick_adjust=true \
     sys.displayfeature.entry.enable=true
+    
+# Force disable blank
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.force_no_blanking=true
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \

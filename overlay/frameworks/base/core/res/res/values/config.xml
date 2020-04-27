@@ -120,10 +120,10 @@
     <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">13</integer>
+    <integer name="config_screenBrightnessDoze">17</integer>
 
     <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
+    <bool name="config_displayBlanksAfterDoze">false</bool>
 
     <!-- Default screen brightness for VR setting. Default value: 0x56 => 86. -->
     <integer name="config_screenBrightnessForVrSettingDefault">86</integer>
