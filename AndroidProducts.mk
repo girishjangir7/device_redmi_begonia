@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cesium_begonia.mk
+    $(LOCAL_DIR)/aosp_begonia.mk
