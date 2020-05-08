@@ -21,7 +21,7 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
